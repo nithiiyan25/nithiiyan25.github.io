@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Questionaire</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<div class=page>
+    <div class="title">
+        <h1>What do you think about this website?</h1>
+    </div>
+    <div class="link">
+        <h2>Check out the <a href="https://www.tesla.com/en_ca/model3/design#overview">Tesla Model 3 Builder</a></h2>
+    </div>
+    <div class="image">
+        <a href="https://www.tesla.com/en_ca/model3/design#overview">
+            <img src="img/teslawebsite.png" alt="Tesla Model 3 Builder">
+        </a>
+    </div>
+    <div class="form">
+        <form action="">
+            <div class="form__namefield">
+                <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="form__header">
+                <h2>What is your prefered method of contact?</h2>
+            </div>
+            <div>
+                <input type="radio" id="cc1" name="contact" value="email">
+                <label for="cc1">Email</label><br>
+                <input type="radio" id="cc2" name="contact" value="phone">
+                <label for="cc2">Phone</label><br>
+                <input type="radio" id="cc3" name="contact" value="mail">
+                <label for="cc3">Mail</label><br>
+            </div>
+            <div class="form__header">
+                <h2>What is your favourite parts of the UI?</h2>
+            </div>
+            <div class="form__checkboxes">
+                <input type="checkbox" name="favourites" id="car">
+                <label for="car">The large picture of the car</label><br>
+                <input type="checkbox" name="favourites" id="text">
+                <label for="text">Large, easy to read text</label><br>
+                <input type="checkbox" name="favourites" id="animations">
+                <label for="animations">Fluid animations</label><br>
+            </div>
+            <div class="form__singleselectionlist">
+                <label for="cars">What's the best Tesla?</label>
+                <select name="cars" id="cars">
+                    <option value="Model S">Model S</option>
+                    <option value="Model 3">Model 3</option>
+                    <option value="Model X">Model X</option>
+                    <option value="Model Y">Model Y</option>
+                    <option value="Roadster">Roadster</option>
+                </select>
+                </label>
+            </div>
+            <div class="form__comments">
+                <label for="commentarea">Enter any extra comments here:</label>
+                <textarea name="textarea" id="commentarea" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form__submitbutton">
+                <input type="submit" value="Submit">
+            </div>
+    </div>
+    <div class="createdby">
+        Created by "The One, The Only, David Stewart"
+    </div>
+    </form>
+</div>
+
+</html>
