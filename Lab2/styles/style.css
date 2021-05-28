@@ -1,0 +1,47 @@
+*{
+  color:#212121;
+  padding: 5px;
+  
+  line-height: 1.5;
+}
+
+body{
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-items:center;
+  align-items:center;
+  gap:10px;
+  background-color: #CFD8DC;
+  
+}
+
+select {
+  padding: 15px;
+  border:0;
+  border-bottom:1px solid #eee;
+  border-radius:10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  width:75%;
+
+}
+.tabcontent{
+  text-align: center;
+}
+.next-client-button{
+  padding: 15px;
+  border:0;
+  border-bottom:1px solid #eee;
+  border-radius:10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  width:15%;
+  color:#212121
+}
+.addCart{
+  padding: 15px;
+  border:0;
+  border-bottom:1px solid #eee;
+  border-radius:10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  width:50%;
+  color:#212121
+}
