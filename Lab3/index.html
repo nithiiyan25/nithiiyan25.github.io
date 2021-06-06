@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="heading">
+		<h1>Robert Gordon Grocery</h1>
+	</div>
+
+	<div class="sitebody">
+		<div id="Client" class="tabcontent">
+			<h3>Welcome!</h3>
+			<p>Please tell us about any dietary restrictions you have:</p>
+			<select id="dietSelect" name="dietSelect">
+				<option value="None">None</option>
+				<option value="nutfree">Nut Free</option>
+				<option value="lactosefree">Lactose Free</option>
+				<option value="organic">Organic</option>
+				<option value="lowcal">Low Calorie</option>
+			</select>
+		</div>
+
+		<button id="next-client" class="next-client-button"
+			onclick="populateListProductChoices(dietSelect.id, 'displayProduct');showelem(Products.id)">Next</button>
+
+		<div id="Products" class="tabcontent" style="display:none">
+			<h3>Your targeted products</h3>
+			<p>We preselected products based on your restrictions.</p>
+			Choose items to buy:
+			<div id="displayProduct"></div>
+			<button id="addCart" type="button" class="addCart" onclick="selectedItems();showelem(Cart.id)">
+				Add selected items to cart.
+			</button>
+		</div>
+
+		<div id="Cart" class="tabcontent" style="display:none">
+			<h3>Cart</h3>
+			<p>Here is your cart.</p>
+			<div id="displayCart"></div>
+			<label for="couponcode">Enter a coupon code (optional):</label><br>
+			<input type="text" name="coupon" id="couponcode">
+			<p>Select a pickup option:</p>
+			<label for="curbsidepickupradio">Curbside Pickup</label>
+			<input type="radio" name="pickupoption" id="curbsidepickupradio" onclick="showelem(pickuptimediv.id)">
+
+			<label for="instorepickupradio">In-Store Pickup</label>
+			<input type="radio" name="pickupoption" id="instorepickupradio" onclick="showelem(pickuptimediv.id)">
+		</div>
+
+		<div id="pickuptimediv" class="pickuptimediv" style="display:none">
+			<label for="pickuptime">Please select a pickup time between 9am and 5pm today:</label>
+			<input type="time" name="pickuptime" id="pickuptime" onclick="showelem(orderbutton.id)">
+		</div>
+
+		<button id="orderbutton" style="display:none" onclick="alert('thanks for placing your order!')">Placeorder</button>
+
+		<footer class="createdby">
+			Created by "The One, The Only, David Stewart"
+		</footer>
+
+		<script src="scripts/groceries.js"></script>
+		<script src="scripts/main.js"></script>
+	</div>
+</body>
+
+</html>
