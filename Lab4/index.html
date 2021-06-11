@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<div class="container-lg">
+    <div class="p-5 text-center text-white bg-dark ">
+        <h1 class="display-1">Welcome to Ottawa Physio!</h1>
+    </div>
+    <div class="p-5 text-center  ">
+        <h2 class="display-4">Located Conventionally on uOttawa Campus</h2>
+    </div>
+    <div class="row justify-content-around">
+        <div class="card text-white bg-dark" style="width: 60rem;">
+            <img src="images/maps1.png" class="card-img-top p-4" alt="...">
+            <div class="card-body">
+                <h3 class=" text-center display-6">Located at 100 Marie-Curie Private #203, Ottawa, ON K1N 6N5</h3>
+            </div>
+        </div>
+    </div>
+    <div class="p-5 text-center">
+        <h2 class="display-3">Check out our services!</h2>
+    </div>
+    <table style="width: 50%; margin: auto;" class="table table-dark table-hover text-center ">
+        <thead>
+            <tr>
+                <th scope="col">
+                    <h2>Service</h2>
+                </th>
+                <th scope="col">
+                    <h2>Price</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aquatherapy</td>
+                <td>199.99</td>
+            </tr>
+            <tr>
+                <td>Acupuncture</td>
+                <td>99.99</td>
+            </tr>
+            <tr>
+                <td>Massage Therapy</td>
+                <td>149.99</td>
+            </tr>
+            <tr>
+                <td>Shockwave Therapy</td>
+                <td>49.99</td>
+            </tr>
+            <tr>
+                <td>Dry Needling</td>
+                <td>179.99</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="p-5 text-center">
+        <h2 class="display-3">Meet the experts!</h2>
+    </div>
+    <div class="row justify-content-around">
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="images/physio1.jpg" class="card-img-top p-4" alt="...">
+            <div class="card-body">
+                <p class="card-text">Meet Doctor Amy Santiago, the expert on Aquatherapy.</p>
+            </div>
+        </div>
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="images/physio2.png" class="card-img-top p-4" alt="...">
+            <div class="card-body">*
+                <p class="card-text">Meet Doctor Jake Peralta, the expert on Acupuncture.</p>
+            </div>
+        </div>
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="images/physio3.jpg" class="card-img-top p-4" alt="...">
+            <div class="card-body">
+                <p class="card-text">Meet Doctor Roza Diaz, the expert on Massage Therapy.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="p-5 text-center">
+            <h2 class="display-3">Book an appointment</h2>
+        </div>
+    </div>
+    <form action="" class="mx-auto m-2">
+        <div class="input-group mx-auto m-2" style="max-width: 50%;">
+            <span class="input-group-text">Service</span>
+            <select id="servselect" class="form-control">
+                <option>Acupuncture</option>
+                <option>Aquatherapy</option>
+                <option>Massage Therapy</option>
+            </select>
+        </div>
+        <div class="input-group mx-auto m-2" style="max-width: 50%;">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control">
+            <input type="text" aria-label="Last name" class="form-control">
+        </div>
+        <div class="input-group date mx-auto m-2" data-provide="datepicker" style="max-width: 50%;">
+            <span class="input-group-text">Pick a date for your appointment</span>
+            <input class="form-control" id="formDate" type="date">
+        </div>
+        <div class="input-group date mx-auto m-2" data-provide="datepicker" style="max-width: 50%;">
+            <span class="input-group-text">Pick a time for your appointment</span>
+            <input class="form-control" id="formTime" type="time">
+        </div>
+        <div class="input-group date mx-auto m-2" data-provide="datepicker" style="max-width: 50%;">
+            <span class="input-group-text">Enter your phone number</span>
+            <input class="from-control" id="text">
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+
+</div>
+
+</form>
+
+<br><br><br><br><br><br><br>
+</div>
+
+</div>
+
+</html>
