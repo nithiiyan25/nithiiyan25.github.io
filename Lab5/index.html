@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet"
+		type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+
+	<script src="scripts/service.js"></script>
+	<link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<div class="container-lg">
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		<a class="navbar-brand p-3" href="#">Ottawa Physio</a>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#map">Map</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#services">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#experts">Experts</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#booking">Booking</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="p-5 text-center text-white bg-dark ">
+		<h1 class="display-1">Welcome to Ottawa Physio!</h1>
+	</div>
+	<div class="p-5 text-center  ">
+		<h2 class="display-4"><img src="images/waiter.png" class="p-2 img-fluid" alt="...">Located Conventionally on
+			uOttawa Campus </h2>
+		<div class="row justify-content-around">
+			<div class="card text-white bg-dark" style="width: 60rem;" id="map">
+				<img src="images/maps1.png" class="card-img-top p-4" alt="...">
+				<div class="card-body">
+					<h3 class=" text-center display-6">Located at 100 Marie-Curie Private #203, Ottawa, ON K1N 6N5</h3>
+				</div>
+			</div>
+		</div>
+		<div class="p-5 text-center" id="services">
+			<h2 class="display-3"><img src="images/services.png" class="p-2 img-fluid" alt="...">Check out our services!
+			</h2>
+		</div>
+		<table style="width: 50%; margin: auto;" class="table table-dark  text-center ">
+			<thead>
+				<tr>
+					<th scope="col">
+						<h2>Service</h2>
+					</th>
+					<th scope="col">
+						<h2>Price</h2>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Aquatherapy</td>
+					<td>199.99</td>
+				</tr>
+				<tr class>
+					<td>Acupuncture</td>
+					<td>99.99</td>
+				</tr>
+				<tr>
+					<td>Dry Needling</td>
+					<td>179.99</td>
+				</tr>
+				<tr>
+					<td>Massage Therapy</td>
+					<td>149.99</td>
+				</tr>
+				<tr>
+					<td>Shockwave Therapy</td>
+					<td>49.99</td>
+				</tr>
+
+			</tbody>
+		</table>
+		<div class="p-5 text-center" id="experts">
+			<h2 class="display-3"><img src="images/experts.png" class="p-2 img-fluid" alt="...">Meet the experts!</h2>
+		</div>
+		<div class="row justify-content-around">
+			<div class="card text-white bg-dark" style="width: 18rem;">
+				<img src="images/physio1.jpg" class="card-img-top p-4" alt="...">
+				<div class="card-body">
+					<p class="card-text">Meet Doctor Amy Santiago, the expert on Aquatherapy.</p>
+				</div>
+			</div>
+			<div class="card text-white bg-dark" style="width: 18rem;">
+				<img src="images/physio2.png" class="card-img-top p-4" alt="...">
+				<div class="card-body">
+					<p class="card-text">Meet Doctor Jake Peralta, the expert on Acupuncture.</p>
+				</div>
+			</div>
+			<div class="card text-white bg-dark" style="width: 18rem;">
+				<img src="images/physio3.jpg" class="card-img-top p-4" alt="...">
+				<div class="card-body">
+					<p class="card-text">Meet Doctor Rosa Diaz, the expert on Massage Therapy.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div>
+			<div class="p-5 text-center" id="booking">
+				<h2 class="display-3"><img src="images/booking.png" class="p-2 img-fluid" alt="...">Book an appointment
+				</h2>
+			</div>
+		</div>
+
+		<form action="" class="mx-auto m-2" id="contactform">
+			<div class="input-group mx-auto m-2" style="max-width: 50%;">
+				<span class="input-group-text">Service</span>
+				<select id="servselect" class="form-control">
+					<option>Acupuncture</option>
+					<option>Aquatherapy</option>
+					<option>Massage Therapy</option>
+				</select>
+			</div>
+
+			<div class="input-group mx-auto m-2" style="max-width: 50%;">
+				<span class="input-group-text">Doctor</span>
+				<select id="docselect" class="form-control" onchange="blackoutdays()">
+					<option>Amy Santiago</option>
+					<option>Jake Peralta</option>
+					<option>Rosa Diaz</option>
+				</select>
+			</div>
+
+			<div class="input-group mx-auto m-2" style="max-width: 50%;" data-bs-toggle="tooltip"
+				data-bs-placement="right" title="Enter your name for our records">
+				<span class="input-group-text">First and last name</span>
+				<input name=firstname type="text" aria-label="First name" class="form-control">
+				<input name=lastname type="text" aria-label="Last name" class="form-control">
+			</div>
+
+			<div class="input-group date mx-auto m-2" data-provide="datepicker" style="max-width: 50%;">
+				<span class="input-group-text">Pick a date for your appointment</span>
+				<input type = "text" class="form-control" id = "datepicker">
+			</div>
+
+			<div class="input-group date mx-auto m-2"  style="max-width: 50%;">
+				<span class="input-group-text">Pick a time for your appointment</span>
+				<input name=time class="form-control" id="formTime" type="time">
+			</div>
+
+			<div class="input-group date mx-auto m-2" style="max-width: 50%;">
+				<span class="input-group-text">Enter your phone number</span>
+				<input name=phonenum type="text" class="form-control" aria-label="Text input with dropdown button">
+			</div>
+
+			<hr class="mb-4 mx-auto" style="max-width: 50%;">
+
+			<img src="images/card.png" class="p-2 img-fluid" alt="...">
+			<div class="input-group mx-auto m-2" style="max-width: 50%;" data-bs-toggle="tooltip"
+				data-bs-placement="right" title="Only collected in case of cancellations">
+				<span class="input-group-text">Credit Card Number</span>
+				<input name=creditcard type="text" aria-label="Number" class="form-control">
+			</div>
+
+			<div class="input-group mx-auto m-2" style="max-width: 50%;">
+				<span class="input-group-text">Name on Card</span>
+				<input name=creditcardname type="text" aria-label="Number" class="form-control">
+			</div>
+
+			<div class="input-group mx-auto m-2" style="max-width: 50%;">
+				<span class="input-group-text">Expiration/CVV</span>
+				<input type="text" aria-label="Number" class="form-control">
+				<input type="text" aria-label="Number" class="form-control">
+			</div>
+
+			<div class="row">
+				<div class="col text-center">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+
+			</div>
+
+	</div>
+
+	</form>
+
+	<br><br><br><br><br><br><br>
+</div>
+
+</div>
+
+</html>
